@@ -13,8 +13,8 @@ import LoginRedirectPage from './pages/LoginRedirectPage';     // New: Optional 
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
+    <Router>
+      <AuthProvider>
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -27,8 +27,8 @@ function App() {
             <Route path="/login" element={<LoginRedirectPage />} /> {/* Route to handle direct /login access, opens AuthModal */}
           </Routes>
         </div>
-      </Router>
-    </AuthProvider>
+      </AuthProvider>
+    </Router>
   );
 }
 
